@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:padding="2dp"
+    tools:context=".TransactionActivity">
+
+    <TextView
+        android:id="@+id/tvTrainEvent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Training Event"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:id="@+id/LinLay1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toBottomOf="@id/tvTrainEvent">
+
+        <include layout="@layout/trans1"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvDateTrans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Tanggal"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toBottomOf="@+id/LinLay1"/>
+
+    <LinearLayout
+        android:id="@+id/LinLay2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toBottomOf="@id/tvDateTrans">
+
+        <include layout="@layout/trans2"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvTransferTo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Transfer Kepada"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toBottomOf="@+id/LinLay2"/>
+
+    <LinearLayout
+        android:id="@+id/LinLay3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toBottomOf="@id/tvTransferTo">
+
+        <include layout="@layout/trans3"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvPembayaran"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Pembayaran"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toBottomOf="@+id/LinLay3"/>
+
+    <LinearLayout
+        android:id="@+id/LinLay4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toBottomOf="@id/tvPembayaran">
+
+        <include layout="@layout/trans4"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

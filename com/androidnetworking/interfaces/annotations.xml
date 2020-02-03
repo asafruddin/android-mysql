@@ -1,0 +1,5 @@
+<root>
+    <item name='com.androidnetworking.interfaces.JSONArrayRequestListener'>
+        <annotation name='java.lang.Deprecated' />
+    </item>
+</root>

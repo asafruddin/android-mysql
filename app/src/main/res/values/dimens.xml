@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="newsMoreTextSize">12sp</dimen>
+    <dimen name="form_app_bar_hight">80sp</dimen>
+    <dimen name="spacing_large">15.0dip</dimen>
+    <dimen name="spacing_medium">5.0dip</dimen>
+    <dimen name="abc_text_size_subhead_material">16.0sp</dimen>
+    <dimen name="spacing_middle">10.0dip</dimen>
+    <dimen name="spacing_mlarge">20.0dip</dimen>
+    <dimen name="abc_text_size_display_2_material">45.0sp</dimen>
+    <dimen name="abc_text_size_large_material">22.0sp</dimen>
+    <dimen name="abc_text_size_medium_material">18.0sp</dimen>
+    <dimen name="spacing_small">3.0dip</dimen>
+    <dimen name="abc_text_size_body_2_material">14.0sp</dimen>
+    <dimen name="spacing_mxlarge">25.0dip</dimen>
+    <dimen name="spacing_xxlarge">50.0dip</dimen>
+    <dimen name="spacing_xmlarge">40.0dip</dimen>
+</resources>

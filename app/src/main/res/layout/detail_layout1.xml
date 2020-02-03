@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/detail_overlap"
+    style="@style/DetailCardView"
+    app:cardCornerRadius="5dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="10dp">
+
+        <ImageView
+            android:id="@+id/first_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_my_location_black_24dp"/>
+
+        <TextView
+            android:id="@+id/tvLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:text="Address"
+            app:layout_constraintBottom_toBottomOf="@+id/first_icon"
+            app:layout_constraintLeft_toRightOf="@+id/first_icon"
+            app:layout_constraintTop_toTopOf="@id/first_icon"/>
+
+        <ImageView
+            android:id="@+id/second_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/first_icon"
+            app:srcCompat="@drawable/ic_date_range_black_24dp"/>
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:text="Address"
+            app:layout_constraintBottom_toBottomOf="@+id/second_icon"
+            app:layout_constraintLeft_toRightOf="@+id/second_icon"
+            app:layout_constraintTop_toTopOf="@id/second_icon"/>
+
+        <ImageView
+            android:id="@+id/third_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/second_icon"
+            app:srcCompat="@drawable/ic_access_time_black_24dp"/>
+
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:text="Address"
+            app:layout_constraintBottom_toBottomOf="@id/third_icon"
+            app:layout_constraintLeft_toRightOf="@id/third_icon"
+            app:layout_constraintTop_toTopOf="@id/third_icon"/>
+
+        <ImageView
+            android:id="@+id/forth_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/third_icon"
+            app:srcCompat="@drawable/ic_call_black_24dp"/>
+
+        <TextView
+            android:id="@+id/tvTelp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:text="Address"
+            app:layout_constraintBottom_toBottomOf="@+id/forth_icon"
+            app:layout_constraintLeft_toRightOf="@id/forth_icon"
+            app:layout_constraintTop_toTopOf="@id/forth_icon"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

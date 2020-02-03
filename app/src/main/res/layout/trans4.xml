@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/trans4"
+    android:background="@color/white"
+    android:padding="3dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp">
+
+    <TextView
+        android:id="@+id/jumPeserta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="jumlah"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="16dp"
+        android:textStyle="normal"
+        tools:ignore="MissingConstraints"/>
+
+    <TextView
+        android:id="@+id/tvPeserta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Peserta"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/jumPeserta"
+        tools:ignore="MissingConstraints"/>
+
+    <TextView
+        android:id="@+id/jualInternal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Anggaran = "
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/jumPeserta"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tvPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="harga"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="16dp"
+        android:textStyle="normal"
+        app:layout_constraintLeft_toRightOf="@+id/jualInternal"
+        app:layout_constraintTop_toBottomOf="@+id/tvPeserta"
+        tools:ignore="MissingConstraints"/>
+
+    <Button
+        android:id="@+id/btnJoinFinal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="2dp"
+        android:text="Gabung"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="@drawable/button_stroke"
+        app:layout_constraintTop_toBottomOf="@+id/jualInternal"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

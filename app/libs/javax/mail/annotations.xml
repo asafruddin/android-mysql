@@ -1,0 +1,5 @@
+<root>
+    <item name='javax.mail.Session'>
+        <annotation name='java.lang.Deprecated' />
+    </item>
+</root>

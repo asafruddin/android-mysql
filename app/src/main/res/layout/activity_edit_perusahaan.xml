@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditPerusahaanActivity"
+    android:fitsSystemWindows="true"
+    android:gravity="center">
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="?actionBarSize"
+        tools:ignore="MissingConstraints">
+        <TextView
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+            android:textColor="@color/grey_80"
+            android:gravity="center"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:text="Data Perusahaan"
+            android:layout_weight="1.0"
+            app:fontFamily="sans-serif-medium"
+            tools:ignore="MissingConstraints" />
+        <ImageButton
+            android:id="@+id/btnNext"
+            android:background="?selectableItemBackgroundBorderless"
+            android:layout_width="?actionBarSize"
+            android:layout_height="?actionBarSize"
+            android:tint="@color/grey_60"
+            app:srcCompat="@drawable/ic_done"
+            tools:ignore="MissingConstraints" />
+
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:scrollbars="none"
+        android:clipToPadding="false"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollingCache="true"
+        android:fillViewport="true"
+        app:layout_constraintTop_toBottomOf="@id/layout1"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/spacing_mxlarge"
+            android:paddingTop="@dimen/spacing_medium"
+            android:paddingRight="@dimen/spacing_mxlarge"
+            android:paddingBottom="@dimen/spacing_xxlarge"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints">
+        <TextView
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+            android:textColor="@color/grey_90"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama Perusahaan"
+            tools:ignore="MissingConstraints" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:background="@color/grey_3"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/spacing_xmlarge"
+                android:layout_marginTop="@dimen/spacing_middle"
+                app:hintEnabled="false">
+
+                <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                    android:textColorHint="@color/grey_20"
+                    android:id="@+id/txtNamaPerusahaan"
+                    android:background="@drawable/edit_text_round_bg_outline"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:inputType="text"
+                    android:hint="Nama Perusahaan" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:textColor="@color/grey_90"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama Direktur"
+                tools:ignore="MissingConstraints" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:background="@color/grey_3"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/spacing_xmlarge"
+                android:layout_marginTop="@dimen/spacing_middle"
+                app:hintEnabled="false">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:textColorHint="@color/grey_20"
+                    android:id="@+id/txtNamaDirektur"
+                    android:background="@drawable/edit_text_round_bg_outline"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:hint="Nama Perusahaan" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:textColor="@color/grey_90"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nomor Telpon Direktur"
+                tools:ignore="MissingConstraints" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:background="@color/grey_3"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/spacing_xmlarge"
+                android:layout_marginTop="@dimen/spacing_middle"
+                app:hintEnabled="false">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:textColorHint="@color/grey_20"
+                    android:id="@+id/txtNoTelpDir"
+                    android:background="@drawable/edit_text_round_bg_outline"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:inputType="number"
+                    android:hint="Nomor Telpon Direktur" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:textColor="@color/grey_90"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nomor Telpon Kantor"
+                tools:ignore="MissingConstraints" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:background="@color/grey_3"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/spacing_xmlarge"
+                android:layout_marginTop="@dimen/spacing_middle"
+                app:hintEnabled="false">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:textColorHint="@color/grey_20"
+                    android:id="@+id/txtNoTelpKantor"
+                    android:background="@drawable/edit_text_round_bg_outline"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:inputType="number"
+                    android:hint="Nomor Telpon Kantor" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:textColor="@color/grey_90"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nomor Pokok Wajib Pajak"
+                tools:ignore="MissingConstraints" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:background="@color/grey_3"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/spacing_xmlarge"
+                android:layout_marginTop="@dimen/spacing_middle"
+                app:hintEnabled="false">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:textColorHint="@color/grey_20"
+                    android:id="@+id/txtNpwp"
+                    android:background="@drawable/edit_text_round_bg_outline"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:inputType="number"
+                    android:hint="Nomor Pokok Wajib Pajak" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

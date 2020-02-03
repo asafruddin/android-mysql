@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">SEM-I</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string-array name="array_jenis">
+        <item>Pilih Jenis</item>
+        <item>Residential</item>
+        <item>Non Residential</item>
+    </string-array>
+
+    <string-array name="array_status">
+        <item>Pilih Jenis</item>
+        <item>Pasti Running</item>
+        <item>Masih Prospek</item>
+    </string-array>
+
+    <string-array name="array_bank">
+        <item>Pilih Bank</item>
+        <item>BNI</item>
+        <item>BRI</item>
+        <item>BCA</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="appbar_scrolling_view_behavior">com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior</string>
+</resources>
